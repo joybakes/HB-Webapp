@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+{% block content %}
+    <h1>Create a new project<h1>
+        <h2>Please enter the project details</h2>
+<form action="/new_project_created">
+    <label for="title">Title:</label>
+    <input type="text" name="title" />
+    <label for="description">Description:</label>
+    <input type="text" name="description" />
+    <label for="max_grade">Maximum Grade:</label>
+    <input type="text" name="max_grade" />
+    <input type="submit">
+<form>
+{% endblock %}

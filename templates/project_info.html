@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+{% block content %}
+<h1>Project name: {{project_name}}</h1>
+<!-- <h2>Project Description:</h2> -->
+<h3>Student Grades:</h3>
+<ul>
+{% for student in students %}
+<li><a href="/student?student={{student.2}}">{{student.0}} {{student.1}}</a>: {{student.3}}</li>
+{% endfor %}
+</ul>
+{% endblock %}
